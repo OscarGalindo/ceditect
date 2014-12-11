@@ -2,12 +2,36 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Ceditect.com{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/ceditect/css/bootstrap.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('bundles/ceditect/css/font-awesome.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('bundles/ceditect/css/ceditect.css') }}"/>
+        <script src="{{ asset('bundles/ceditect/js/jquery.js') }}" type="text/javascript"></script>
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <nav class="navbar navbar-static-top" role="navigation">
+            <div class="container" id="info_header">
+                <div class="navbar-header navbar-text">
+                    634 579 606 | contacto@ceditect.com
+                </div>
+                <div class="collapse navbar-collapse">
+                    <p class="navbar-text navbar-right" id="social">
+                        <i class="fa fa-lg fa-google-plus"></i>
+                        <i class="fa fa-lg fa-facebook-square"></i>
+                        <i class="fa fa-lg fa-linkedin-square"></i>
+                        <i class="fa fa-lg fa-twitter"></i>
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <header>
+                <span class="helper"></span><img src="{{ asset('bundles/ceditect/images/logo.png') }}" alt="Ceditect.com" />
+            </header>
+            {% block body %}{% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
