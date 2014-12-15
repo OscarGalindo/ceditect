@@ -4,7 +4,7 @@ var copy = require('gulp-copy');
 
 gulp.task('sass', function() {
     gulp.src('./web/bundles/ceditect/sass/ceditect.scss')
-        .pipe(sass({sourceComments: 'map'}))
+        .pipe(sass({sourceComments: 'map', errLogToConsole: true}))
         .pipe(gulp.dest('./web/css'));
 });
 
