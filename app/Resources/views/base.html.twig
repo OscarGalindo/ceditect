@@ -10,23 +10,34 @@
     <body>
         <div class="container">
             <div class="row">
-            <header>
-                <div id="headertop" class="clearfix">
-                    <div class="info">
-                        634 579 606 | contacto@ceditect.com
+                <header>
+                    <div id="headertop" class="clearfix">
+                        <div class="info">
+                            634 579 606 | contacto@ceditect.com
+                        </div>
+                        <div class="social">
+                            <i class="fa fa-lg fa-google-plus"></i>
+                            <i class="fa fa-lg fa-facebook-square"></i>
+                            <i class="fa fa-lg fa-linkedin-square"></i>
+                            <i class="fa fa-lg fa-twitter"></i>
+                        </div>
                     </div>
-                    <div class="social">
-                        <i class="fa fa-lg fa-google-plus"></i>
-                        <i class="fa fa-lg fa-facebook-square"></i>
-                        <i class="fa fa-lg fa-linkedin-square"></i>
-                        <i class="fa fa-lg fa-twitter"></i>
+                    <div id="logo">
+                        <span class="helper"></span><img src="{{ asset('bundles/ceditect/images/logo.png') }}" alt="Ceditect.com" />
                     </div>
-                </div>
-                <div id="logo">
-                    <span class="helper"></span><img src="{{ asset('bundles/ceditect/images/logo.png') }}" alt="Ceditect.com" />
-                </div>
-            </header>
-            {#{% block body %}{% endblock %}#}
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Cédula de habitabilidad</a></li>
+                        <li><a href="#">Certificado energético</a></li>
+                        <li><a href="#">ITE</a></li>
+                        <li><a href="#">Licencias de actividad</a></li>
+                        <li><a href="#">Otros servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+                {#{% block body %}{% endblock %}#}
         </div>
     </body>
 </html>
