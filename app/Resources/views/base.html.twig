@@ -4,30 +4,29 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Ceditect.com{% endblock %}</title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        <link rel="stylesheet" href="js/ceditect.js" />
-        <script src="{{ asset('/css/ceditect.css') }}"></script>
+        <link rel="stylesheet" href="{{ asset('/css/ceditect.css') }}" />
+        <script src="{{ asset('/js/ceditect.js') }}"></script>
     </head>
     <body>
         <div class="container">
+            <div class="row">
             <header>
-                <div id="headertop">
-                    <div class="pull-left">
+                <div id="headertop" class="clearfix">
+                    <div class="info">
                         634 579 606 | contacto@ceditect.com
                     </div>
-                    <div class="headerright">
-                        <p class="pull-right" id="social">
-                            <i class="fa fa-lg fa-google-plus"></i>
-                            <i class="fa fa-lg fa-facebook-square"></i>
-                            <i class="fa fa-lg fa-linkedin-square"></i>
-                            <i class="fa fa-lg fa-twitter"></i>
-                        </p>
+                    <div class="social">
+                        <i class="fa fa-lg fa-google-plus"></i>
+                        <i class="fa fa-lg fa-facebook-square"></i>
+                        <i class="fa fa-lg fa-linkedin-square"></i>
+                        <i class="fa fa-lg fa-twitter"></i>
                     </div>
                 </div>
-                <div class="logo">
+                <div id="logo">
                     <span class="helper"></span><img src="{{ asset('bundles/ceditect/images/logo.png') }}" alt="Ceditect.com" />
                 </div>
             </header>
-            {% block body %}{% endblock %}
+            {#{% block body %}{% endblock %}#}
         </div>
     </body>
 </html>

@@ -1,17 +1,36 @@
+html, body {
+  background-color: lighten($bg-logo, 5);
+}
 header {
-  background-color: #29292A;
   text-align: center;
   height: 200px;
-  & .helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+  #headertop {
+    background-color: $bg-info-header;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    .info {
+      @extend .pull-left;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+
+    }
+    .social i {
+      @extend .pull-right;
+      margin-top: 2px;
+      margin-left: 15px !important;
+    }
   }
-}
-header img {
-  vertical-align: middle;
-  height: 150px;
-}
-#social i {
-  margin-left: 15px;
+  #logo {
+    background-color: $bg-logo;
+    height: 200px;
+    .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    img {
+      vertical-align: middle;
+      height: 150px;
+    }
+  }
 }
