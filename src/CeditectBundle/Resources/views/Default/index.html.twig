@@ -1,5 +1,15 @@
-{% extends '::base.html.twig' %}
+{% extends 'CeditectBundle::layout.html.twig' %}
 
  {% block body %}
-     Ceditect!
+     <div class="col-md-8">
+         <h1>
+             {{ 'inicio.titulo'|trans }}
+         </h1>
+         <div class="info">
+             {{ 'inicio.info'|trans|raw }}
+         </div>
+     </div>
+     <div class="col-md-4">
+         Prueba
+     </div>
  {% endblock %}
